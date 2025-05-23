@@ -1,82 +1,44 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AdsServerbase" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Base.Theme.AdsServerbase" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorPrimary">@color/primary500</item>
+        <item name="colorPrimaryVariant">@color/primary600</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorSecondary</item>
-        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
-        <item name="android:listDivider">@color/white</item>
-        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorSecondary">@color/secondary500</item>
+        <item name="colorSecondaryVariant">@color/secondary700</item>
+        <item name="colorOnSecondary">@color/white</item>
     </style>
 
-    <style name="Theme.AdsServerbase.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+    <style name="Theme.AdsServerbase" parent="Base.Theme.AdsServerbase" />
 
-    <style name="FullScreenSplash" parent="Theme.AdsServerbase.NoActionBar">
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="SplashButtonShapeAppearance">
-        <item name="cornerSizeTopLeft">16dp</item>
-        <item name="cornerSizeTopRight">16dp</item>
-        <item name="cornerSizeBottomLeft">16dp</item>
-        <item name="cornerSizeBottomRight">16dp</item>
-    </style>
-
-    <style name="SplashButtonStyle" parent="Widget.MaterialComponents.Button">
-        <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">@color/colorPrimary</item>
-        <item name="rippleColor">@color/colorPrimaryVariant</item>
-        <item name="shapeAppearance">@style/SplashButtonShapeAppearance</item>
-
-    </style>
-
-
-    <style name="AdsButtonShapeAppearance">
-        <item name="cornerSizeTopLeft">30dp</item>
-        <item name="cornerSizeTopRight">30dp</item>
-        <item name="cornerSizeBottomLeft">30dp</item>
-        <item name="cornerSizeBottomRight">30dp</item>
-    </style>
-
-    <style name="AdsButtonShapeAppearance2">
-        <item name="cornerSizeTopLeft">16dp</item>
-        <item name="cornerSizeTopRight">16dp</item>
-        <item name="cornerSizeBottomLeft">16dp</item>
-        <item name="cornerSizeBottomRight">16dp</item>
+    <!--    Ads Theme Style-->
+    <style name="Theme.AdsServerbase.AdTheme">
+        <item name="android:background">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowExitAnimation">@null</item>
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:statusBarColor">@color/black</item>
     </style>
 
     <style name="AdsButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/_13ssp</item>
         <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">@color/colorPrimaryVariant</item>
-        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
         <item name="shapeAppearance">@style/AdsButtonShapeAppearance</item>
+        <item name="android:letterSpacing">0</item>
     </style>
-
-    <style name="AdsButtonStyle2" parent="Widget.MaterialComponents.Button">
-        <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">@color/colorPrimaryVariant</item>
-        <item name="rippleColor">@color/colorPrimary</item>
-        <item name="shapeAppearance">@style/AdsButtonShapeAppearance2</item>
+    <style name="AdsButtonShapeAppearance">
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
     </style>
-
-    <style name="Theme.AdsServerbase.AdAttribution">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:text">"AD"</item>
-        <item name="android:background">@drawable/bg_ads_notify</item>
-    </style>
-
-
 </resources>

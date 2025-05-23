@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_startup"
+    >
+
+    <fragment
+        android:id="@+id/fragmentStartup"
+        android:name="com.orbitalsonic.adsserverbase.ui.startup.fragments.FragmentStartup"
+        android:label="fragment_startup"
+        tools:layout="@layout/fragment_startup">
+        <action
+            android:id="@+id/action_fragmentStartup_to_fragmentLanguage"
+            app:destination="@id/fragmentStartupLanguage"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentStartup"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStartupStart"
+        android:name="com.orbitalsonic.adsserverbase.ui.startup.fragments.FragmentStartupStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_startup_start">
+        <action
+            android:id="@+id/action_fragmentStart_to_fragmentLanguage"
+            app:destination="@id/fragmentStartupLanguage"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/fragmentStartupStart"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentStartupLanguage"
+        android:name="com.orbitalsonic.adsserverbase.ui.startup.fragments.FragmentStartupLanguage"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_startup_language" />
+</navigation>

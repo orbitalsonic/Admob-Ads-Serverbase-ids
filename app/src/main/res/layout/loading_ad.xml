@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_ad_outline_shape"
-        >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        />
 
-        <ProgressBar
-            android:id="@+id/progressLoading"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Advertisement"
+        android:textSize="@dimen/_12ssp"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"/>
 
-        <TextView
-            android:id="@+id/progressText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/loading_advertisement"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/_14ssp"
-            android:paddingHorizontal="@dimen/_20sdp"
-            app:layout_constraintBottom_toBottomOf="@+id/progressLoading"
-            app:layout_constraintTop_toTopOf="@+id/progressLoading"
-            app:layout_constraintStart_toEndOf="@id/progressLoading"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+</LinearLayout>

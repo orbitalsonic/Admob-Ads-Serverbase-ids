@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">Ads Serverbase</string>
-
-    <string name="loading_advertisement">Loading Advertisement</string>
-    <string name="get_started">Get Started</string>
-
 </resources>

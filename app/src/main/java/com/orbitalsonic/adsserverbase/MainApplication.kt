@@ -1,38 +1,23 @@
 package com.orbitalsonic.adsserverbase
 
 import android.app.Application
-import android.net.ConnectivityManager
-import com.facebook.ads.AdSettings
-import com.facebook.ads.AudienceNetworkAds
-import com.orbitalsonic.adsserverbase.helpers.utils.InternetHandler
-import com.orbitalsonic.adsserverbase.helpers.utils.SharedPrefsUtils
-import com.orbitalsonic.adsserverbase.helpers.viewmodel.AdsViewModel
-import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.startKoin
-import org.koin.dsl.module
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 
+/**
+ * @Author: Muhammad Yaqoob
+ * @Date: 14,March,2024.
+ * @Accounts
+ *      -> https://github.com/orbitalsonic
+ *      -> https://www.linkedin.com/in/myaqoob7
+ */
 class MainApplication : Application() {
-
     override fun onCreate() {
         super.onCreate()
-        AudienceNetworkAds.initialize(this)
-        AdSettings.addTestDevice("3eae0ad7-98ab-4aef-978a-6ba0432c404a")
 
-        startKoin {
-            androidContext(this@MainApplication)
-            modules(listOf(appModule,viewModelModule))
-        }
+        // to get test ads on this device."
+        MobileAds.setRequestConfiguration(
+            RequestConfiguration.Builder().setTestDeviceIds(listOf("E13FEE4C2083A31575BFEFD22146CE76")).build()
+        )
     }
-
-    private val appModule = module{
-
-        single { SharedPrefsUtils(getSharedPreferences("AppSharedPrefs", MODE_PRIVATE)) }
-        single { InternetHandler( getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager) }
-    }
-
-    private val viewModelModule = module {
-        single { AdsViewModel(this@MainApplication) }
-    }
-
-
 }
