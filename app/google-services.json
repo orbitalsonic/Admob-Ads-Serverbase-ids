@@ -1,36 +1,45 @@
 {
   "project_info": {
-    "project_number": "771658513063",
-    "project_id": "ads-serverbase",
-    "storage_bucket": "ads-serverbase.appspot.com"
+    "project_number": "688202145716",
+    "project_id": "ads-implementation-3f226",
+    "storage_bucket": "ads-implementation-3f226.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:771658513063:android:e42c4aea96724eb8513982",
+        "mobilesdk_app_id": "1:688202145716:android:19af4419649d88def4dce1",
         "android_client_info": {
-          "package_name": "com.orbitalsonic.adsserverbase"
+          "package_name": "com.orbitalsonic.admobads"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "771658513063-1qm2lvf8dulpdl0a96p19l411462s5pl.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAWlLqQTIAY1eaaII_Fk5LuhbypMjhVH8g"
+          "current_key": "AIzaSyAKWKZWbfF5BMAmdx0LyUSRXpDf0x9CXBU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "771658513063-1qm2lvf8dulpdl0a96p19l411462s5pl.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688202145716:android:3d062821bc4f1a1bf4dce1",
+        "android_client_info": {
+          "package_name": "com.orbitalsonic.adsserverbase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKWKZWbfF5BMAmdx0LyUSRXpDf0x9CXBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
         }
       }
     }
