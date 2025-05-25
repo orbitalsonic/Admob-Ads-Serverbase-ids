@@ -23,32 +23,32 @@ The ad configuration is fetched from Firebase Remote Config in the following JSO
       {
         "type": "banner_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/2014213617"
       },
       {
         "type": "native_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/2247696110"
       },
       {
         "type": "inter_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/1033173712"
       },
       {
         "type": "rewarded_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/5224354917"
       },
       {
         "type": "rewarded_inter_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/5354046379"
       },
       {
         "type": "app_open_ad",
         "isEnabled": true,
-        "adID": ""
+        "adID": "ca-app-pub-3940256099942544/3419835294"
       }
     ]
   }
